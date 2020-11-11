@@ -8,6 +8,7 @@ class Dg < Formula
     bottle :unneeded
     
     def install
+      bin.install "dg"
       prefix.install Dir["*"]
     end
   end
