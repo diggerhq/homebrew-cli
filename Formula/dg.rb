@@ -8,10 +8,10 @@ class Dg < Formula
     bottle :unneeded
     
     def install
-      create_wrapper
-      bin.install "dg-homebrew" => "dg"
-      prefix.install Dir[".Python"]
-      prefix.install Dir["*"]
+      #create_wrapper
+      bin.install "dg" => "dg"
+      include.install Dir[".Python"]
+      include.install Dir["*"]
     end
 
   
