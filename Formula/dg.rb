@@ -9,16 +9,9 @@ class Dg < Formula
     
     def install
       #create_wrapper
-      bin.install "dg" => "dg"
-      include.install Dir[".Python"]
-      include.install Dir["*"]
+      bin.install_symlink "dg"
+      prefix.install Dir[".Python"]
+      prefix.install Dir["*"]
     end
-
   
-    private def create_wrapper
-      wrapper = '#!/usr/bin/env bash
-      ../dg'
-      File.write('dg-homebrew', wrapper)
-    end
-
   end
