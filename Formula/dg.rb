@@ -9,7 +9,7 @@ class Dg < Formula
     
     def install
       create_wrapper
-      bin.install "dg-homebrew", "dg"
+      bin.install "dg-homebrew" => "dg"
       prefix.install Dir[".Python"]
       prefix.install Dir["*"]
     end
