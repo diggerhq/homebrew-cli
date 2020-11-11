@@ -9,6 +9,7 @@ class Dg < Formula
     
     def install
       bin.install "dg"
+      prefix.install Dir[".Python"]
       prefix.install Dir["*"]
     end
   end
