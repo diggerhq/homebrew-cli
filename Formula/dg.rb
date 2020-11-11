@@ -9,6 +9,5 @@ class Dg < Formula
     
     def install
       prefix.install Dir["*"]
-      bin.install "dg"
     end
   end
