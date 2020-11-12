@@ -1,4 +1,4 @@
-class Dg < Formula
+class Dg2 < Formula
     desc "Digger CLI"
     homepage "https://digger.dev"
   
