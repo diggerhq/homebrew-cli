@@ -10,7 +10,7 @@ class Dg2 < Formula
     def install
       bin.install_symlink "../dg2" => "dg"
       bin.install_symlink "../dg2" => "dg2"
-      prefix.install "dg", "dg2"
+      prefix.install "dg" => "dg2"
       prefix.install Dir["*"]
     end
   
