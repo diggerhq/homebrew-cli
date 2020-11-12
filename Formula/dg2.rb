@@ -8,7 +8,7 @@ class Dg2 < Formula
     bottle :unneeded
     
     def install
-      bin.install_symlink "../dg"
+      bin.install_symlink "../dg" => "dg"
       prefix.install Dir["*"]
     end
   
