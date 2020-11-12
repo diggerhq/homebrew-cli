@@ -10,8 +10,8 @@ class Dg2 < Formula
     def install
       #create_wrapper
       bin.install_symlink "../dg"
-      prefix.install Dir["dg/.Python"]
-      prefix.install Dir["dg/*"]
+      prefix.install Dir[".Python"]
+      prefix.install Dir["*"]
     end
   
   end
