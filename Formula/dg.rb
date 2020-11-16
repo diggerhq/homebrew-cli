@@ -3,7 +3,7 @@ class Dg < Formula
     homepage "https://digger.dev"
   
   
-    url "https://bit.ly/digger-mac", :using => :curl
+    url "https://bit.ly/dg-darwin-v0012", :using => :curl
     
     bottle :unneeded
     
