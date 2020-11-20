@@ -3,13 +3,14 @@ class Dg2 < Formula
     homepage "https://digger.dev"
   
   
-    url "https://iplogger.org/2uyY96", :using => :curl
+    url "https://digger-releases.s3-eu-west-1.amazonaws.com/darwin/dg-darwin-v0.1.4.zip", :using => :curl
     
     bottle :unneeded
     
     def install
+      #create_wrapper
       bin.install_symlink "../dg"
-      system "chmod", "+x", "dg"
+      prefix.install Dir[".Python"]
       prefix.install Dir["*"]
     end
   
